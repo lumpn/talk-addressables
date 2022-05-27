@@ -1,2 +1,2 @@
--nowarn:649
+-nowarn:628,649
 -warnaserror
