@@ -132,6 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1432006795}
+  - component: {fileID: 1432006796}
   m_Layer: 0
   m_Name: PeasantSpawner
   m_TagString: Untagged
@@ -154,6 +155,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 200, z: 0}
+--- !u!114 &1432006796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432006794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 562b2207886b7634489d1bda38dedeab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabRef:
+    m_AssetGUID: f8c1075e0f87ce042807cfc4716312d3
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
 --- !u!1 &1489553290
 GameObject:
   m_ObjectHideFlags: 0
@@ -163,6 +181,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1489553291}
+  - component: {fileID: 1489553292}
   m_Layer: 0
   m_Name: PeasantSpawner
   m_TagString: Untagged
@@ -185,6 +204,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: -30, z: 0}
+--- !u!114 &1489553292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1489553290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ee208cb6d1cf8d44a02f6985cde5a71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabAddress: Assets/Prefabs/Peasant.prefab
 --- !u!1001 &1513728082
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -308,6 +340,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1782424358}
+  - component: {fileID: 1782424359}
   m_Layer: 0
   m_Name: VendorSpawner
   m_TagString: Untagged
@@ -330,6 +363,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1782424359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782424357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6326a414eb48ed34a80eec88429182c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bundleName: vendors
+  prefabName: Vendor
 --- !u!1001 &1897172249
 PrefabInstance:
   m_ObjectHideFlags: 0

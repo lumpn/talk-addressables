@@ -1,13 +1,15 @@
 using System.Collections;
+using System.IO;
 using UnityEngine;
 
 public sealed class AssetBundleSpawner : MonoBehaviour
 {
-    [SerializeField] private string bundlePath;
+    [SerializeField] private string bundleName;
     [SerializeField] private string prefabName;
 
     protected IEnumerator Start()
     {
+        var bundlePath = Path.Combine(Application.streamingAssetsPath, bundleName);
         var bundleRequest = AssetBundle.LoadFromFileAsync(bundlePath);
         yield return bundleRequest;
 

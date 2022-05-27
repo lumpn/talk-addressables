@@ -380,7 +380,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8447d9d52de7ff248a064d762d736fc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabPath: Explosion
+  prefabName: Explosion
 --- !u!4 &1746715514
 Transform:
   m_ObjectHideFlags: 0

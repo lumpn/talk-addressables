@@ -3,11 +3,11 @@ using UnityEngine;
 
 public sealed class ResourcesSpawner : MonoBehaviour
 {
-    [SerializeField] private string prefabPath;
+    [SerializeField] private string prefabName;
 
     protected IEnumerator Start()
     {
-        var request = Resources.LoadAsync<GameObject>(prefabPath);
+        var request = Resources.LoadAsync<GameObject>(prefabName);
         yield return request;
 
         var prefab = request.asset;
