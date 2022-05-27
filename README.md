@@ -5,5 +5,9 @@ In this talk for [TGDF 2022](https://2022.tgdf.tw/en) I try to answer whether in
 ## Unity Asset Bundle Extractor
 https://github.com/SeriousCache/UABE
 
+Use UABE 3.0 (beta)
+
 ## Asset Bundle Browser
 https://docs.unity3d.com/Manual/AssetBundles-Browser.html
+
+Install via `com.unity.assetbundlebrowser`.
