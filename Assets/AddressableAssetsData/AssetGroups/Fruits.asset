@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Fruits
+  m_EditorClassIdentifier: 
+  m_GroupName: Fruits
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 1177d9c1ea3621c4bba15a04bdb8abc3
+  m_SerializeEntries:
+  - m_GUID: 3cb641846bef4dd4ba426f906acc8857
+    m_Address: Assets/Materials/Apple.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 464bc0927878ee8428564291cf659537
+    m_Address: Assets/Materials/Orange.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: f34a1efa808a79f458aaa5ada0c07109, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 3499a31246cd3494da9566113aacf491, type: 2}

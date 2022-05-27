@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Townsfolk
+  m_EditorClassIdentifier: 
+  m_GroupName: Townsfolk
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 394b77c72c7d01c418c74b9663047f03
+  m_SerializeEntries:
+  - m_GUID: f395a738d62b0e54398b33fea18d6607
+    m_Address: Assets/Prefabs/Mayor.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f8c1075e0f87ce042807cfc4716312d3
+    m_Address: Assets/Prefabs/Peasant.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: f34a1efa808a79f458aaa5ada0c07109, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 6bb721c7e4ac8f245a31c8acd4fc3b63, type: 2}
