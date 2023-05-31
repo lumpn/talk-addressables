@@ -42,7 +42,6 @@ Put all the prefabs that you want to stream at runtime into the default group. D
 | Content Packing & Loading | Asset Load Mode | Requested Asset And Dependencies | Don't load more than you need. |
 
 ## Deduplication
-
 Install the [de.lumpn.unity-deduplication](https://github.com/lumpn/unity-deduplication) package.
 
 Go to Window &rarr; Asset Management &rarr; Addressables &rarr; Analyze. Select the "Group Duplicate Dependencies" rule, analyze selected rule, and fix selected rule.
@@ -50,3 +49,8 @@ Go to Window &rarr; Asset Management &rarr; Addressables &rarr; Analyze. Select 
 Go to Window &rarr; Asset Management &rarr; Addressables &rarr; Groups. There now is a group called "Grouped Duplicate Asset Isolation". This group contains all shared dependencies of the default group, packed together by label into optimal bundles.
 
 Whenever you make any changes to the default local group or its assets, just delete the entire "Grouped Duplicate Asset Isolation" group and run the "Group Duplicate Dependencies" rule again. The process is deterministic and will only produce different bundles if the dependencies changed.
+
+## Streaming
+Only use `Addressables.InstantiateAsync` to stream assets in. It takes care of loading all dependencies and tracks the handle using reference counting. Do not use any of the `Load` functions, as that causes untracked handles.
+
+Only use `Addressables.ReleaseInstance` to stream assets out. It updates the reference count of the handle and takes care of unloading all dependencies when the handle is no longer in use. Do not call `Object.Destroy`, as that leaks tracked handles.
